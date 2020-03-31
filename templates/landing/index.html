@@ -1,0 +1,45 @@
+<!doctype html>
+{% load static %}
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Ниточка</title>
+	
+
+	<link rel="stylesheet" href="{% static 'css/documenter_style.css' %}" media="all">
+	<link rel="stylesheet" href="{% static 'css/prettify.css' %}" type="text/css" media="screen, projection">
+	
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<ol id="documenter_nav">
+			<li><a class="current" href="index.html">Главная</a></li>
+            <li><a href="Gallery.html">Галерея работ</a></li>
+			<li><a href="Price.html">Прейскурант цен</a></li>
+            <li><a href="Contacts.html">Контакты</a></li>
+		</ol>
+	</div>
+	<div id="documenter_content">
+		<section id="documenter_cover">
+			<h1>Сайт Ателье "Ниточка"</h1>
+		</section>
+
+</body>
+</html>
