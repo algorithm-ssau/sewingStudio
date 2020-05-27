@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Список услуг{% endblock %}
+{% block content %}
+
+    {% if service_list %}
+        {#цикл#}
+        {% for s in service_list %}
+            <a href="#">{{ s.service_name}}</a>{#название услуги#}
+            {{ s.service_description }}{#описание услуги#}
+            {{ s.service_price }} {#цена#}
+            <br>
+        {% endfor %}
+
+    {% else %}
+        Услуги не найдены
+    {% endif %}
+
+{% endblock %}
