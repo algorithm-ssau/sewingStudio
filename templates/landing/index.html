@@ -23,10 +23,10 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
       <h5 class="my-0 mr-md-auto font-weight-normal">Ателье "Ниточка"</h5>
       <nav class="my-2 my-md-0 mr-md-3">
-          <a class="p-2 text-dark" href="">Главная</a>
-        <a class="p-2 text-dark" href="portfolio">Порфолио</a>
-        <a class="p-2 text-dark" href="price">Прейскурант</a>
-        <a class="p-2 text-dark" href="contacts">Контакты</a>
+        <a class="p-2 text-dark" href="{% url 'index'%}">Главная</a>
+        <a class="p-2 text-dark" href="{% url 'portfolio'%}">Порфолио</a>
+        <a class="p-2 text-dark" href="{% url 'services'%}">Прейскурант</a>
+        <a class="p-2 text-dark" href="{% url 'contacts'%}">Контакты</a>
       </nav>
     
     </div>
