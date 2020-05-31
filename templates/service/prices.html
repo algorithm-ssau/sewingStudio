@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,11 +10,10 @@
 
     <title>Главная страница</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'bootstrap-4.0.0/dist/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+    <link href="{% static 'css/pricing.css' %}" rel="stylesheet">
   </head>
 
   <body>
@@ -29,24 +29,26 @@
     
     </div>
 
-    <table border="1" bordercolor="#48D1CC">
+    <table class = "table">
+    <thead class="thead-dark">
         <tr>
             <th>Название услуги</th>
             <th>Цена</th>
         </tr>
-
+  </thead>
     {% if service_list %}
         {#цикл#}
         {% for s in service_list %}
             <tr>
             <td>{{ s.service_name}}</td>{#название услуги#}
-            <td>{{ s.service_price }}</td> {#цена#}
+            <td>от {{ s.service_price }} руб.</td> {#цена#}
             </tr>
         {% endfor %}
 
     {% else %}
         Услуги не найдены
     {% endif %}
+
     </table>
 
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
