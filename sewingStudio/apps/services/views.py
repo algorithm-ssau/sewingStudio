@@ -10,7 +10,7 @@ def index(request):
 
 def services(request):
     service_list = Service.objects.all()
-    return render(request, 'service/list.html', {'service_list': service_list})
+    return render(request, 'service/prices.html', {'service_list': service_list})
 
 
 def contacts(request):
