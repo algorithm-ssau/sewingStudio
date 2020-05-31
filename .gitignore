@@ -4,7 +4,6 @@ venv/
 venv
 /venv
 /venv/
-db.sqlite3
 .DS_Store
 /.idea/
 .idea
