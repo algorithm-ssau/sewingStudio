@@ -11,3 +11,11 @@ def index(request):
 def services(request):
     service_list = Service.objects.all()
     return render(request, 'service/list.html', {'service_list': service_list})
+
+
+def contacts(request):
+    return render(request, 'landing/contacts.html')
+
+
+def portfolio(request):
+    return render(request, 'landing/portfolio.html')
