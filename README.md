@@ -10,6 +10,6 @@ website for clothing atelier
 3)Запустить проект через IDE или консоль: $ python manage.py runserver                            
 
 Иноформация о разработчиках:
-1)Габдиков Владимир : капитан команды, Почта : vova9840@gmail.com
-2)Попович Никита : верстальщик , Почта : popovitch.nikita@gmail.com
-3)Шарипов Равель : верстальщик , Почта : ravel.sharipov@gmail.com
+1)Габдиков Владимир : капитан команды, Почта : vova9840@gmail.com                                                                         
+2)Попович Никита : верстальщик , Почта : popovitch.nikita@gmail.com                                                                       
+3)Шарипов Равель : верстальщик , Почта : ravel.sharipov@gmail.com                                                                         
